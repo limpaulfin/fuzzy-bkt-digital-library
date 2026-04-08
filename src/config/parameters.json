@@ -1,0 +1,57 @@
+{
+  "data": {
+    "raw_file": "data/raw/as.csv",
+    "encoding": "latin1",
+    "filter_original": true,
+    "selected_skills": [
+      "Equation Solving Two or Fewer Steps",
+      "Percent Of",
+      "Addition and Subtraction Integers",
+      "Conversion of Fraction Decimals Percents",
+      "Volume Rectangular Prism"
+    ]
+  },
+  "bkt": {
+    "seed": 42,
+    "num_fits": 5,
+    "columns": {
+      "user": "user_id",
+      "skill": "skill_name",
+      "correct": "correct",
+      "order": "order_id",
+      "response_time": "ms_first_response"
+    }
+  },
+  "fuzzy": {
+    "tfn_scale": {
+      "very_low": [0.0, 0.1, 0.3],
+      "low": [0.1, 0.3, 0.5],
+      "medium": [0.3, 0.5, 0.7],
+      "high": [0.5, 0.7, 0.9],
+      "very_high": [0.7, 0.9, 1.0]
+    },
+    "defuzzify_method": "centroid"
+  },
+  "cognitive_offloading": {
+    "fast_threshold_ms": 3000,
+    "slow_threshold_ms": 300000,
+    "hint_threshold": 3
+  },
+  "output": {
+    "figures_dir": "R/output/figures/",
+    "logs_dir": "R/output/logs/",
+    "dpi": 150,
+    "width": 8,
+    "height": 5
+  },
+  "cud_palette": {
+    "black": "#000000",
+    "orange": "#E69F00",
+    "skyblue": "#56B4E9",
+    "bluishgreen": "#009E73",
+    "yellow": "#F0E442",
+    "blue": "#0072B2",
+    "vermilion": "#D55E00",
+    "reddishpurple": "#CC79A7"
+  }
+}
